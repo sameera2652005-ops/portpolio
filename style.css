@@ -1,62 +1,105 @@
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  line-height: 1.6;
-  background: #f4f4f4;
-  color: #333;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Poppins,sans-serif;
+scroll-behavior:smooth;
 }
 
-header {
-  background: #222;
-  color: #fff;
-  padding: 20px 0;
+body{
+background:#111827;
+color:white;
 }
 
-header h1 {
-  margin: 0;
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 8%;
+background:#0f172a;
+position:sticky;
+top:0;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
+nav ul{
+display:flex;
+list-style:none;
+gap:30px;
 }
 
-nav ul li {
-  margin: 0 15px;
+nav a{
+color:white;
+text-decoration:none;
 }
 
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
+.hero{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:80px 8%;
 }
 
-.section {
-  padding: 40px;
-  background: #fff;
-  margin: 20px auto;
-  max-width: 900px;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+.hero img{
+width:350px;
+border-radius:50%;
+box-shadow:0 0 40px cyan;
 }
 
-.skills-list {
-  display: flex;
-  flex-wrap: wrap;
+span{
+color:#00d4ff;
 }
 
-.skills-list li {
-  background: #0078d7;
-  color: #fff;
-  padding: 10px 15px;
-  margin: 5px;
-  border-radius: 4px;
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#00d4ff;
+color:black;
+margin-top:20px;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
 }
 
-footer {
-  text-align: center;
-  padding: 20px;
-  background: #222;
-  color: #fff;
+section{
+padding:70px 8%;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:25px;
+}
+
+.card{
+background:#1f2937;
+padding:30px;
+border-radius:15px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.skill{
+margin:20px 0;
+}
+
+.skill div{
+background:#333;
+height:10px;
+border-radius:10px;
+}
+
+.skill span{
+display:block;
+height:10px;
+background:#00d4ff;
+border-radius:10px;
+}
+
+footer{
+text-align:center;
+padding:25px;
+background:#0f172a;
 }
